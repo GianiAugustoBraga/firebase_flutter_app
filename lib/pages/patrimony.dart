@@ -27,8 +27,7 @@ class PatrimonyPage extends StatelessWidget {
               final patrimonio = patrimonios[index];
               return ListTile(
                 title: Text(patrimonio['nome']),
-                subtitle: Text(
-                    'Código: ${patrimonio['cod_patrimonio']} - Data: ${patrimonio['data_retirada']}'),
+                subtitle: Text('Código: ${patrimonio['cod_patrimonio']}'),
               );
             },
           );

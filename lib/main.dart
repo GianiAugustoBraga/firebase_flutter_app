@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_flutter_app/firebase_options.dart';
+import 'package:firebase_flutter_app/pages/create.dart';
 import 'package:firebase_flutter_app/pages/login.dart';
 import 'package:firebase_flutter_app/pages/patrimony.dart';
 import 'package:flutter/material.dart';
@@ -34,14 +35,19 @@ class MyApp extends StatelessWidget {
       // Tema do aplicativo
       theme: ThemeData(
         // Esquema de cores personalizado
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.orange,
 
         // Usa o design do Material 3
         useMaterial3: true,
       ),
-
+      initialRoute: '/login',
+      routes: {
+        '/login': (context) => LoginPage(),
+        '/home': (context) => PatrimonyPage(),
+        '/addPatrimonio': (context) => AddPatrimonioPage(),
+      },
       // Carrega a Página inicial do aplicativo
-      home: PatrimonyPage(),
+      // home: AddPatrimonioPage(),
     );
   }
 }
