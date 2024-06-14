@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_flutter_app/firebase_options.dart';
-import 'package:firebase_flutter_app/pages/home_page.dart';
 import 'package:firebase_flutter_app/pages/login.dart';
+import 'package:firebase_flutter_app/pages/patrimony.dart';
 import 'package:flutter/material.dart';
 
 // Função principal que inicializa o Firebase e executa o aplicativo
@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Carrega a Página inicial do aplicativo
-      home: LoginPage(),
+      home: PatrimonyPage(),
     );
   }
 }
